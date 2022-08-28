@@ -2,11 +2,15 @@ package parcial1;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Esta clase define la Carretilla de compras del cliente
- * en ella pueden haber muchos productos, los cuales 
- * se van agreando de diferentes formas.
- */
+/***********************************************
+* Carretilla.java
+* Yellsmy Toj
+*
+* Esta clase define la Carretilla de compras del cliente
+* en ella pueden haber muchos productos, los cuales 
+* se van agreando de diferentes formas.
+***********************************************/
+
 public class Carretilla {
     // Atributo que define una lista de productos contenidos en la carretilla
     private List<Producto> lista = new ArrayList<Producto>();
