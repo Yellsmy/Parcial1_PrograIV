@@ -22,7 +22,7 @@ public class Archivos
 	 */
 	public static void main(String[] args)throws Exception
         {          
-            String nombreArchivo = "C:/Users\\Lenovo5\\Desktop\\archivos\\Archivo1.txt"; /* Definición del archivo de texto a leer */
+            String nombreArchivo = "C:/Users\\Lenovo5\\Desktop\\archivos\\Archivo.txt"; /* Definición del archivo de texto a leer */
             FileInputStream archivo; // Definición de flujo de datos
             InputStreamReader conversor; // Definición del flujo de lectura
             BufferedReader filtro=null; // Definición del buffer
