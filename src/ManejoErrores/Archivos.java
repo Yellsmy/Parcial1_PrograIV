@@ -22,7 +22,7 @@ public class Archivos
 	 */
 	public static void main(String[] args)throws Exception
         {          
-            String nombreArchivo = "C:/Users\\Lenovo5\\Desktop\\archivos\\Archivo.txt"; /* Definición del archivo de texto a leer */
+            String nombreArchivo = "C:/Users\\Lenovo5\\Desktop\\archivos\\Archivo1.txt"; /* Definición del archivo de texto a leer */
             FileInputStream archivo; // Definición de flujo de datos
             InputStreamReader conversor; // Definición del flujo de lectura
             BufferedReader filtro=null; // Definición del buffer
@@ -40,15 +40,17 @@ public class Archivos
                 {
                     System.out.println(línea); /* Imprime en pantalla una línea del archivo */
                     línea = filtro.readLine(); // Lee la siguiente línea 
-		}                           
+		}
+                filtro.close(); // Cierra el archivo
             }
             catch(FileNotFoundException exceptionFile) // Captura el error si no encuentra el archivo
             {
-                throw new FileNotFoundException("Archivo no encontrado"); // Se lanza el error
+                System.out.println("Archivo no encontrado");
             }
             catch (IOException exeption) // Captura los errores del sistema
             {
                 System.out.println(exeption.getMessage());
+                throw new IOException("Error del Sistema"); // Se lanza el error
             }
             catch(Exception exception) // Captura cualquier error que impda la ejecución
             {               
@@ -56,8 +58,7 @@ public class Archivos
             }
             finally
             {
-                filtro.close(); // Cierra el archivo               
-            }
-            System.out.println("Archvos");           
+                System.out.println("Programa Finalizado");               
+            }           
 	}
 }
