@@ -1,16 +1,19 @@
-
 package parcial1;
+/***********************************************
+* Producto.java
+* Yellsmy Toj
+*
+* Esta clase define objetos de tipo Producto de un comercio
+* cada producto se identifica con un nombre y precio
+***********************************************/
 
-/**
- * Esta clase define objetos de tipo Producto de un comercio
- * cada producto se identifica con un nombre y precio
- *
- */
 public class Producto
 {
 	  private String nombre; // Atributo que define el nombre del producto
 	  private double precio; // Atritubo que define el precio del producto
 	  
+          //**************************************************************
+          
 	  /**
 	   * Setters y Getters de los atributos de la clase Producto
 	   * 
@@ -35,6 +38,8 @@ public class Producto
 	    this.precio = precio;
 	  }
 	  
+          //**************************************************************
+          
 	  /**
 	   * Constructor de la clase Producto
 	   * @param nombre Define el nombre del producto
@@ -42,8 +47,7 @@ public class Producto
 	   */
 	  public Producto(String nombre, double precio)
           {
-	    super();
-	    this.nombre = nombre;
-	    this.precio = precio;
+	    setNombre(nombre);
+            setPrecio(precio);
 	  }   
 }
