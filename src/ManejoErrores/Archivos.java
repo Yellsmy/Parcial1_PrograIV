@@ -40,7 +40,7 @@ public class Archivos
                 {
                     System.out.println(línea); /* Imprime en pantalla una línea del archivo */
                     línea = filtro.readLine(); // Lee la siguiente línea 
-		}
+		} // End while
                 filtro.close(); // Cierra el archivo
             }
             catch(FileNotFoundException exceptionFile) // Captura el error si no encuentra el archivo
